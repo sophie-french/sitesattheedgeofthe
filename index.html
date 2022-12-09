@@ -9,11 +9,26 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital@0;1&display=swap');
 
+        html {
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
         body {
             text-align: center;
             font-family: 'Space Mono', monospace;
             color: blue;
-            margin-top: 5vh;
+            /*            margin-top: 5vh;*/
+            position: relative;
+            margin: 0;
+            padding-bottom: 6rem;
+            min-height: 100%;
 
         }
 
@@ -41,7 +56,8 @@
 
         }
 
-        footer {
+        /*
+        .footer {
             text-align: center;
             font-family: 'Space Mono', monospace;
             color: darkgrey;
@@ -50,7 +66,19 @@
             bottom: 10px;
             width: 100%;
             height: auto;
-            /* Height of the footer */
+        }
+*/
+        .footer {
+            text-align: center;
+            font-family: 'Space Mono', monospace;
+            color: darkgrey;
+            font-size: 10pt;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 1rem;
+            text-align: center;
         }
     </style>
 </head>
@@ -59,11 +87,11 @@
     <div class="container">
         <h1>Sites at the Edge of the World</h1>
         <p>
-            <i>Sites at the Edge of the World</i> is an interactive investigation into storytelling, narrative, and world-building that draws on the aesthetics of the early web to poetically explore the performance of self in online spaces. The work is comprised of the personal websites of five Speculative Identities – ‘characters’ developed using generative code and machine learning algorithms trained on the internet. Users can sit  at any computer in the world and trawl through pages of blogs, shrines, and 'about me' sections, following the entangled web from one persona to another or focusing in on the details of each site until the edges of their real-ness are revealed.
+            <i>Sites at the Edge of the World</i> is an interactive investigation into storytelling, narrative, and world-building that draws on the aesthetics of the early web to poetically explore the performance of self in online spaces. The work is comprised of the personal websites of five Speculative Identities – ‘characters’ developed using generative code and machine learning algorithms trained on the internet. Users can sit at any computer in the world and trawl through pages of blogs, shrines, and 'about me' sections, following the entangled web from one persona to another or focusing in on the details of each site until the edges of their real-ness are revealed.
         </p>
-                    <p>
-            All text on the sites has been written by OpenAI's GPT-3 model, and imagery was sourced from Openverse and the Internet Archives. In this sense the work forms a collage of our collctive history of internet habitation and holds up a mirror to the beautiful and troubling ways we act online. <i>Sites at the Edge of the World</i> engages with a Speculative Design practice, not imagining a possible or preferable future but an alternative, almost now. 
-            </p>
+        <p>
+            All text on the sites has been written by OpenAI's GPT-3 model and imagery was sourced from Openverse and the Internet Archives. In this sense the work forms a collage of our collctive history of internet habitation and holds up a mirror to the beautiful and troubling ways we act online. <i>Sites at the Edge of the World</i> engages with a Speculative Design practice, not imagining a possible or preferable future but an alternative, almost now.
+        </p>
         <table>
             <tr>
                 <td></td>
@@ -88,7 +116,7 @@
     </div>
 
 </body>
-<footer>
+<div class="footer">
     <i>Designed, researched, curated, and hand-coded by Sophie French &#169 2022
     </i>
-</footer></html>
+</div></html>
