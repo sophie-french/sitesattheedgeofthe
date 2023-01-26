@@ -21,24 +21,24 @@
         }
 
         body {
-            text-align: center;
+            text-align: left;
             font-family: 'Space Mono', monospace;
             color: blue;
-            /*            margin-top: 5vh;*/
             position: relative;
             margin: 0;
             padding-bottom: 6rem;
             min-height: 100%;
+            font-size: 13px;
 
         }
 
 
         a:hover {
-            color: blueviolet;
+            color: #6F3;
         }
 
         a:visited:hover {
-            color: blueviolet;
+            color: #6F3;
         }
 
         a:visited {
@@ -46,45 +46,46 @@
         }
 
         .container {
-            margin-left: 10%;
-            margin-right: 10%;
+            margin-left: 2%;
+            margin-right: 15%;
         }
 
         td {
-            /*            border: 1px solid;*/
             padding: 20px;
+            text-align: center;
 
         }
 
-        /*
         .footer {
-            text-align: center;
+            margin-left: 2%;
+            margin-right: 15%;
+            text-align: left;
             font-family: 'Space Mono', monospace;
             color: darkgrey;
-            font-size: 10pt;
-            position: fixed;
-            bottom: 10px;
-            width: 100%;
-            height: auto;
-        }
-*/
-        .footer {
-            margin-left: 10%;
-            margin-right: 10%;
-            text-align: center;
-            font-family: 'Space Mono', monospace;
-            color: darkgrey;
-            font-size: 10pt;
+            font-size: 10px;
             position: absolute;
             right: 0;
             bottom: 0;
             left: 0;
-            padding: 1rem;
-            text-align: center;
+            padding-bottom: 1rem;
         }
-        
+
+        .footer a {
+            color: darkgrey;
+        }
+
+        .footer a:hover {
+            color: #6F3;
+        }
+
+        .footer a:visited:hover {
+            color: #6F3;
+        }
+
         .detail {
             text-align: left;
+            font-family: 'Space Mono', monospace;
+            color: blue;
         }
     </style>
 </head>
@@ -98,7 +99,6 @@
         <p>
             All text on the sites has been written by OpenAI's GPT-3 model and imagery was sourced from Openverse and the Internet Archives. In this sense the work forms a collage of our collective history of internet habitation and holds up a mirror to the beautiful and troubling ways we act online. <i>Sites at the Edge of the World</i> engages with a Speculative Design practice, not imagining a possible or preferable future but an alternative, almost now.
         </p>
-        <p class="detail"><i>* We recommend viewing on desktop</i></p>
         <table>
             <tr>
                 <td></td>
@@ -132,7 +132,9 @@
 
 </body>
 <div class="footer">
+    <p class="detail"><i>* We recommend viewing on desktop</i></p>
     <p><i>This project was completed as part of the UTS Design Honours program. Thank-you to my advisor Andrew Burrell and my peers in the 2022 Viscom and Photography cohort.
-        </i><br><i>Designed, researched, curated, and hand-coded by Sophie French &#169 2022
+        </i></p>
+    <p><i>Designed, researched, curated, and hand-coded by <a href="sophiefrench.com.au">Sophie French</a> &#169 2022
         </i></p>
 </div></html>
